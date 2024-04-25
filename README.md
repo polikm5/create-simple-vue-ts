@@ -11,5 +11,5 @@
 ## 使用
 使用npm:
 ```sh
-npm create-simple-vue-ts
+npm create simple-vue-ts@latest
 ```
