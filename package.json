@@ -6,7 +6,8 @@
     "create-simple-vue-ts": "dist/index.js"
   },
   "files": [
-    "dist"
+    "dist",
+    "template"
   ],
   "scripts": {
     "dev": "tsup --watch --sourcemap",
@@ -24,5 +25,9 @@
     "tsup": "^8.0.2",
     "typescript": "^5.4.5"
   },
-  "release-it": {}
+  "release-it": {
+    "hooks": {
+      "after:bump": "npm run build"
+    }
+  }
 }
